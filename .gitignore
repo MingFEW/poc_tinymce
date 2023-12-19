@@ -1,0 +1,11 @@
+# dependencies
+/node_modules
+
+# compiled output
+/dist
+
+# IDEs and editors
+package-lock.json
+
+#System Files
+.DS_Store

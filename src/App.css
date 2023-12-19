@@ -1,0 +1,27 @@
+#root {
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.editor-wrap .tox .tox-statusbar .tox-statusbar__right-container {
+  display: none;
+}
+.content-wrap p {
+  margin-bottom: 10px;
+}
+.content-wrap ul, ol {
+  margin-left: 15px;
+}
+.content-wrap ul li {
+  list-style: inherit;
+}
+.content-wrap ol li {
+  list-style: decimal;
+}
+.content-wrap blockquote {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+}
