@@ -1,4 +1,4 @@
-import {  useCallback, useState } from "react";
+import { useCallback, useState } from "react";
 import { Editor } from "@tinymce/tinymce-react";
 import "./App.css";
 import Loading from "./components/Loading";
@@ -11,10 +11,12 @@ function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [content, setContent] = useState<string | null>(null);
 
-
-  const onChange = useCallback((data: string) => {
-    setContent(data);
-  }, [setContent]);
+  const onChange = useCallback(
+    (data: string) => {
+      setContent(data);
+    },
+    [setContent]
+  );
 
   return (
     <div className="w-full lg:w-[960px] mx-auto">
@@ -23,7 +25,7 @@ function App() {
       </h2>
 
       <div className="editor-wrap">
-        <div className={`relative ${isLoading ? 'h-[125px]' : ''}`}>
+        <div className={`relative ${isLoading ? "h-[125px]" : ""}`}>
           {/* LOADING */}
           {isLoading && (
             <div className="flex items-center justify-center absolute top-0 left-0 right-0 bottom-0 bg-white z-10 w-full">
@@ -50,7 +52,7 @@ function App() {
               quickbars_selection_toolbar:
                 "blocks fontsize | bold italic forecolor backcolor | alignleft aligncenter " +
                 "alignright alignjustify | bullist numlist | link image media | blockquote",
-              quickbars_insert_toolbar: false,
+              quickbars_insert_toolbar: "image media table",
               max_height: 500,
             }}
             onEditorChange={onChange}
