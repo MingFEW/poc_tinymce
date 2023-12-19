@@ -48,7 +48,7 @@ function App() {
                 "@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap'); body { font-family: 'Tinos', serif; font-size: 14pt; color: #292929; } p {margin: 0 0 10px 0}",
               placeholder: "Enter here...",
               quickbars_selection_toolbar:
-                "blocks bold italic forecolor backcolor | alignleft aligncenter " +
+                "blocks fontsize | bold italic forecolor backcolor | alignleft aligncenter " +
                 "alignright alignjustify | bullist numlist | link image media | blockquote",
               quickbars_insert_toolbar: false,
               max_height: 500,

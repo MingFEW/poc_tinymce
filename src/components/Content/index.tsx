@@ -5,7 +5,7 @@ type EditorContentProps = {
 const EditorContent: React.FC<EditorContentProps> = ({ rawHtml }) => {
   return (
     <div className="content-wrap text-black mt-[40px]">
-      <h2 className="text-lg font-bold mb-2">Editor Content</h2>
+      <h2 className="text-lg font-bold mb-3">Editor Content</h2>
       <div dangerouslySetInnerHTML={{ __html: rawHtml! }}></div>
     </div>
   );

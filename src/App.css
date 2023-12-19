@@ -9,14 +9,16 @@
 .content-wrap p {
   margin-bottom: 10px;
 }
-.content-wrap ul, ol {
+.content-wrap ul, .content-wrap ol {
   margin-left: 15px;
 }
 .content-wrap ul li {
-  list-style: inherit;
+  list-style: disc;
+  margin-bottom: 5px;
 }
 .content-wrap ol li {
   list-style: decimal;
+  margin-bottom: 5px;
 }
 .content-wrap blockquote {
   margin-top: 10px;
@@ -24,4 +26,22 @@
   margin-left: 30px;
   padding-left: 15px;
   border-left: 3px solid #ccc;
+}
+.content-wrap h1 {
+  font-size: 48px;
+}
+.content-wrap h2 {
+  font-size: 44px;
+}
+.content-wrap h3 {
+  font-size: 40px;
+}
+.content-wrap h4 {
+  font-size: 36px;
+}
+.content-wrap h5 {
+  font-size: 32px;
+}
+.content-wrap h6 {
+  font-size: 28px;
 }
