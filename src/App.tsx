@@ -4,6 +4,7 @@ import "./App.css";
 import Loading from "./components/Loading";
 import EditorContent from "./components/Content";
 
+// Key
 const CDE_KEY = import.meta.env.VITE_TINYCDE_KEY;
 
 function App() {
